@@ -1,6 +1,6 @@
 <template>
 <Header/>
-<Formulario/>
+<Formulario @cadastrar="AdicionarMedicamento"/>
 </template>
 
 <script>
