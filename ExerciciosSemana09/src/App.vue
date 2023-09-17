@@ -26,6 +26,14 @@ export default {
         favorito: false
       }
       this.listaMedicamentos.push(novoMedicamento)
+    },
+
+    FavoritarMedicamento (id){
+      this.listaMedicamentos = this.listaMedicamentos.map(item => {
+        if(item.id === id) {
+          item.favorito =! item.favorito
+        }
+      })
     }
   },
   components: {
