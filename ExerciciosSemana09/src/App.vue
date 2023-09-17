@@ -1,12 +1,16 @@
 <template>
-<Header></Header>
+<Header/>
+<Formulario/>
 </template>
 
 <script>
-import Header from '../src/components/Header.vue'
+import Header from '../src/components/Header.vue';
+import Formulario from '../src/components/FormularioNovoMedicamento.vue'
+
 export default {
   components: {
-    Header
+    Header,
+    Formulario
   }
 }
 </script>
