@@ -9,7 +9,7 @@
         <label>Preço do Medicamento</label>
         <input type="number" id="Price" v-model="price">
 
-        <button @click="$emit('cadastrar', MedName, LabName, Price)">Cadastrar</button>       
+        <button type="submit" @click="$emit('cadastrar', MedName, LabName, Price)">Cadastrar</button>       
     </form>
 </template>
 
