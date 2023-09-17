@@ -1,13 +1,14 @@
 <template>
-  
+<Header></Header>
 </template>
 
 <script>
-export default defineComponent({
-  setup() {
-    
-  },
-})
+import Header from '../src/components/Header.vue'
+export default {
+  components: {
+    Header
+  }
+}
 </script>
 
 <style scoped>
