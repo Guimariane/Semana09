@@ -1,6 +1,17 @@
 <template>
 <Header/>
 <Formulario @cadastrar="AdicionarMedicamento"/>
+
+<div>
+  <CardMedicamento 
+  v-for="MedName in listaMedicamentos"
+  :key="MedName.id"
+  @favoritar="FavoritarMedicamento"
+  :nome="MedName.nome"
+  :laboratorio="MedName.laboratorio"
+  :preco="MedName.preco"
+  :id="MedName.id"/>
+</div>
 </template>
 
 <script>
